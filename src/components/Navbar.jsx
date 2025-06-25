@@ -5,7 +5,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#2a2118] backdrop-blur-md text-[#f0d8b8] border-b-4 border-[#a67c52]"  style={{ backgroundRepeat:"no-repeat", backgroundSize:"cover",   backgroundImage: `url('https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/FREE_CONTENT66dehxycKqgS4Mhiabti/PREVIEW_SCREENSHOT7_166081.jpg')`,  }}>
+    <nav className="w-full bg-[#2a2118] backdrop-blur-md text-[#f0d8b8] border-b-4 border-[#a67c52]" style={{ backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundImage: `url('https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/FREE_CONTENT66dehxycKqgS4Mhiabti/PREVIEW_SCREENSHOT7_166081.jpg')`, }}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -22,22 +22,30 @@ export default function Navbar() {
             <Link
               to="/"
               className="text-[#c2a470] uppercase font-semibold text-sm hover:text-[#fef8ee] transition-colors no-underline tracking-wide px-3 py-1"
-              style={{ textDecoration: "none", paddingRight:"10px" }}
+              style={{ textDecoration: "none", paddingRight: "10px" }}
             >
               FŐOLDAL
             </Link>
-      
+
             <Link
               to="/galery"
               className="text-[#c2a470] uppercase font-semibold text-sm hover:text-[#fef8ee] transition-colors no-underline tracking-wide px-3 py-1"
-              style={{ textDecoration: "none", paddingRight:"10px" }}
+              style={{ textDecoration: "none", paddingRight: "10px" }}
             >
               GALÉRIA
             </Link>
             <Link
+              to="/review"
+              className="text-[#c2a470] uppercase font-semibold text-sm hover:text-[#fef8ee] transition-colors no-underline tracking-wide px-3 py-1"
+              style={{ textDecoration: "none", paddingRight: "10px" }}
+
+            >
+              VÉLEMÉNYEK
+            </Link>
+            <Link
               to="/elerhetoseg"
               className="text-[#c2a470] uppercase font-semibold text-sm hover:text-[#fef8ee] transition-colors no-underline tracking-wide px-3 py-1"
-              style={{ textDecoration: "none", paddingRight:"10px" }}
+              style={{ textDecoration: "none", paddingRight: "10px" }}
             >
               ELÉRHETŐSÉG
             </Link>
@@ -80,6 +88,14 @@ export default function Navbar() {
                 style={{ textDecoration: "none" }}
               >
                 IDŐPONTFOGLALÁS
+              </Link>
+              <Link
+                to="/review"
+                className="px-6 py-3 text-[#c2a470] hover:bg-[#a67c52] hover:text-white transition-colors uppercase tracking-wide font-semibold"
+                onClick={() => setMobileMenuOpen(false)}
+                style={{ textDecoration: "none" }}
+              >
+                VÉLEMÉNYEK
               </Link>
               <Link
                 to="/elerhetoseg"
