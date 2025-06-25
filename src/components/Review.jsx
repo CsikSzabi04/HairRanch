@@ -72,8 +72,8 @@ export default function ReviewPage() {
                 style={{ backgroundImage: `url(${backgroundImages[currentBg]})` }}
             >
                 {/* Header */}
-                <div className="w-[85%] max-w-6xl text-center mb-8" style={{marginTop:"2%", marginBottom:"2%"}} >
-                    <div className="bg-[#2a2118] border-4 border-[#c2a470] px-6 py-4 transform -rotate-1 shadow-xl"  style={{ backgroundImage: 'url("/asd.jpg")',  backgroundRepeat:"no-repeat", backgroundSize:"cover" }} >
+                <div className="w-[85%] max-w-6xl text-center mb-8" style={{ marginTop: "2%", marginBottom: "2%" }} >
+                    <div className="bg-[#2a2118] border-4 border-[#c2a470] px-6 py-4 transform -rotate-1 shadow-xl" style={{ backgroundImage: 'url("/asd.jpg")', backgroundRepeat: "no-repeat", backgroundSize: "cover" }} >
                         <h2 className="text-3xl md:text-5xl font-serif text-[#fef8ee] font-bold tracking-wider">
                             VÉLEMÉNYEK
                             <p className="text-[#e6d3b3] italic text-sm md:text-lg font-light">
@@ -84,22 +84,19 @@ export default function ReviewPage() {
                 </div>
 
                 {/* Main Content - Two Columns */}
-                <div className="w-[80%] max-w-6xl flex flex-col lg:flex-row gap-8" style={{marginTop:"2%", marginBottom:"2%"}}>
+                <div className="w-[80%] max-w-6xl flex flex-col lg:flex-row gap-8" style={{ marginTop: "2%", marginBottom: "2%" }}>
                     {/* Left Column - Review Form */}
                     <div className="lg:w-1/2">
                         <form
                             onSubmit={handleSubmit}
                             className="bg-[#1f1a17]/95 border-4 border-[#c2a470] rounded-xl p-6 shadow-2xl text-[#fef8ee] relative"
                         >
-                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#c2a470] text-[#2a2118] px-4 py-1 rounded-full font-bold text-sm">
-                                ÍRJ VÉLEMÉNYT
-                            </div>
-
-                            <div className="grid grid-cols-1 gap-4 sm:gap-6">
+                            <div className="grid grid-cols-1 gap-4 sm:gap-6" style={{ marginRight: "2%" }}>
                                 <div>
-                                    <label className="block text-[#e6d3b3] mb-1">Név</label>
+                                    <label style={{ marginTop: "1px", marginBottom: "1px", padding: "5px" }} className="block text-[#e6d3b3] mb-1">Név*</label>
                                     <input
                                         type="text"
+                                        style={{ marginTop: "", marginBottom: "1%", padding: "10px 0px", paddingLeft: "5px", color: "white" }}
                                         placeholder="Neved"
                                         className="w-full bg-[#2a2118] border-2 border-[#c2a470] p-3 rounded-lg text-white focus:ring-2 focus:ring-[#c2a470] focus:border-transparent"
                                         value={form.name}
@@ -108,9 +105,10 @@ export default function ReviewPage() {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-[#e6d3b3] mb-1">Email</label>
+                                    <label style={{ marginBottom: "1px", padding: "5px" }} className="block text-[#e6d3b3] mb-1">Email*</label>
                                     <input
                                         type="email"
+                                        style={{ marginTop: "", marginBottom: "2%", padding: "10px 0px", paddingLeft: "5px", color: "white" }}
                                         placeholder="Email címed"
                                         className="w-full bg-[#2a2118] border-2 border-[#c2a470] p-3 rounded-lg text-white focus:ring-2 focus:ring-[#c2a470] focus:border-transparent"
                                         value={form.email}
@@ -122,6 +120,7 @@ export default function ReviewPage() {
                                     <label className="block text-[#e6d3b3] mb-1">Véleményed</label>
                                     <textarea
                                         placeholder="Írd meg, mit gondolsz..."
+                                        style={{ color: "white", padding: "5px", fontSize: "15px" }}
                                         className="w-full bg-[#2a2118] border-2 border-[#c2a470] p-3 rounded-lg text-white focus:ring-2 focus:ring-[#c2a470] focus:border-transparent"
                                         rows={5}
                                         value={form.review}
@@ -131,8 +130,9 @@ export default function ReviewPage() {
                                 </div>
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center">
-                                        <span className="text-[#e6d3b3] mr-2">Értékelés:</span>
+                                        <span style={{ paddingLeft: "10px", paddingBottom: "10px" }} className="text-[#e6d3b3] mr-2">Értékelés:</span>
                                         <select
+                                            style={{ marginLeft: "10px", marginBottom: "10px" }}
                                             value={form.stars}
                                             onChange={(e) => setForm({ ...form, stars: parseInt(e.target.value) })}
                                             className="bg-[#2a2118] border-2 border-[#c2a470] text-white rounded-lg p-2 focus:ring-2 focus:ring-[#c2a470]"
@@ -146,6 +146,7 @@ export default function ReviewPage() {
                                     </div>
                                     <button
                                         type="submit"
+                                        style={{ cursor: "pointer" }}
                                         className="bg-gradient-to-r from-[#c2a470] to-[#d6b981] hover:from-[#b99b60] hover:to-[#c2a470] text-[#2a2118] font-bold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                                     >
                                         Küldés
@@ -156,51 +157,67 @@ export default function ReviewPage() {
                     </div>
 
                     {/* Right Column - Reviews */}
-                    <div className="lg:w-1/2">
+                    <div className="lg:w-1/2" style={{ marginTop: "2%" }}>
                         <div className="bg-[#1f1a17]/95 border-4 border-[#c2a470] rounded-xl p-6 shadow-2xl h-full">
                             <h3 className="text-2xl font-bold text-[#fef8ee] mb-6 text-center border-b border-[#c2a470] pb-2">
                                 VÉLEMÉNYEK ({reviews.length})
                             </h3>
-                            
+
                             {reviews.length === 0 ? (
                                 <div className="text-center py-10">
                                     <p className="text-[#fef8ee]/70 text-xl">Még nincsenek vélemények a városban, pardner!</p>
                                     <p className="text-[#c2a470] mt-2">Legyél te az első, aki véleményt ír!</p>
                                 </div>
                             ) : (
-                                <div className="space-y-4 max-h-[600px] overflow-y-auto pr-2">
+                                <div className="space-y-4 max-h-[600px] overflow-y-auto pr-2"
+                                    style={{
+                                        scrollbarColor: "#8B4513 #2a2118",         // thumb and track colors
+                                        scrollbarWidth: "thin",                    // thin scrollbar for Firefox
+                                        overflowY: "scroll",                       // ensure scroll is active
+                                    }}>
                                     {reviews.map((r) => (
                                         <div
+                                            style={{ padding: "10px" }}
                                             key={r.id}
                                             className="bg-[#2a2118]/90 border-2 border-[#c2a470] p-5 rounded-xl shadow-lg relative"
                                         >
-                                            <div className="absolute -top-3 -left-3 text-3xl bg-[#1f1a17] border-2 border-[#c2a470] rounded-full w-10 h-10 flex items-center justify-center">
-                                                {getRandomEmoji()}
-                                            </div>
-                                            <div className="flex items-start mb-3 pl-6">
-                                                <div className="bg-[#c2a470] text-[#2a2118] font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0">
-                                                    {r.name.charAt(0).toUpperCase()}
-                                                </div>
+                                            <div
+                                                className="flex justify-between items-center mb-3"
+                                                style={{ marginTop: "1%" }}
+                                            >
+                                                {/* Left: Name + Date */}
                                                 <div>
                                                     <h4 className="text-lg font-bold text-[#fef8ee]">{r.name}</h4>
                                                     <p className="text-sm text-[#c2a470]">{r.date}</p>
                                                 </div>
-                                            </div>
-                                            <p className="text-[#f5e8d3] pl-16">{r.review}</p>
-                                            <div className="flex justify-between items-center mt-4">
-                                                <div className="text-[#c2a470]">
-                                                    {'⭐'.repeat(r.stars)}
+
+                                                {/* Right: Emoji */}
+                                                <div
+                                                    className="text-6xl bg-[#1f1a17] border-2 border-[#c2a470] rounded-full w-[30px] h-[50%] flex items-center justify-center"
+                                                    title="Hangulat"
+                                                >
+                                                    {getRandomEmoji()}
                                                 </div>
+                                            </div>
+
+                                            {/* Review text */}
+                                            <p className="text-[#f5e8d3] mt-2">{r.review}</p>
+
+                                            {/* Stars + Delete */}
+                                            <div className="flex justify-between items-center mt-4">
+                                                <div className="text-[#c2a470]">{'⭐'.repeat(r.stars)}</div>
                                                 <button
                                                     onClick={() => handleDelete(r.id)}
-                                                    className="text-red-400 hover:text-red-300 text-xs px-2 py-1 rounded transition-colors"
+                                                    className="text-white text-xs px-3 py-1 rounded bg-red-600 hover:bg-red-500 transition"
                                                     title="Vélemény törlése"
+                                                    style={{ margin: "5px", backgroundColor: "red", cursor: "pointer" }}
                                                 >
-                                                    Törlés
+                                                    X
                                                 </button>
                                             </div>
                                         </div>
                                     ))}
+
                                 </div>
                             )}
                         </div>
