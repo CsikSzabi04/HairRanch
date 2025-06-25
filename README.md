@@ -1,12 +1,41 @@
-# React + Vite
+# HairRanch – Véleményoldal | Kecskemét
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Üdvözlünk a **HairRanch** hivatalos véleményoldalán!  
+Ez a webalkalmazás lehetővé teszi a vendégek számára, hogy visszajelzést írjanak, értékeljenek, és megosszák élményeiket a kecskeméti HairRanch fodrászszalonnal kapcsolatban.
 
-Currently, two official plugins are available:
+![image](https://github.com/user-attachments/assets/dbaa7aa7-6250-40af-ad55-b0369a1f48fa)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Funkciók
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Vendégvélemények beküldése (név, email, értékelés, szöveges visszajelzés)
+- Csillagos értékelés (1–5)
+- Vélemény törlése (csak frontend listából, azonosító alapján)
+- Dinamikusan váltakozó háttérképek
+- Véletlenszerű hangulat ikon minden véleményhez
+- Egyedi stílusú, barna színű vékony görgetősáv
+
+---
+
+## 🛠 Technológiák
+
+- **Frontend**: React, TailwindCSS
+- **Backend**: Express.js
+- **Adattárolás**: Memóriában (`reviews[]` tömb – nem tartós, újraindításkor törlődik)
+- **Portok**:
+  - Backend: `http://localhost:88`
+  - Frontend: saját React szerver vagy beépített build
+
+---
+
+![image](https://github.com/user-attachments/assets/19213a4b-cdc6-402c-a4c5-71c1f8d79515)
+
+
+## Telepítés & Futatás
+
+### 1. Backend (Express)
+
+```bash
+cd backend
+npm install
+node index.js
