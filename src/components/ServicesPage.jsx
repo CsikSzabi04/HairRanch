@@ -41,7 +41,7 @@ export default function ServicesPage() {
       >
         {/* Banner */}
         <div className="w-[90%] flex justify-center">
-          <div className="bg-[#2a2118] border-4 border-[#c2a470] shadow-xl px-6 py-4 transform -rotate-2 w-full sm:w-4/5 md:w-3/5 text-center">
+          <div  style={{ backgroundImage: 'url("/asd.jpg")',  backgroundRepeat:"no-repeat", backgroundSize:"cover" }}  className="bg-[#2a2118] border-4 border-[#c2a470] shadow-xl px-6 py-4 transform -rotate-2 w-full sm:w-4/5 md:w-3/5 text-center">
             <h2 className="text-2xl sm:text-3xl md:text-5xl text-[#fef8ee] font-bold tracking-wider mb-2 font-serif">
               SZOLGÁLTATÁSAIM
             </h2>

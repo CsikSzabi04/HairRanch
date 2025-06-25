@@ -23,7 +23,7 @@ export default function ContactPage() {
             >
                 {/* Header */}
                 <div className="w-[85%] max-w-4xl text-center mb-10" style={{ marginTop: "3%" }}>
-                    <div className="bg-[#2a2118] border-4 border-[#c2a470] px-6 py-4 transform -rotate-1 shadow-xl">
+                    <div  style={{ backgroundImage: 'url("/asd.jpg")',  backgroundRepeat:"no-repeat", backgroundSize:"cover" }}  className="bg-[#2a2118] border-4 border-[#c2a470] px-6 py-4 transform -rotate-1 shadow-xl">
                         <h2 className="text-3xl md:text-5xl font-serif text-[#fef8ee] font-bold tracking-wider">
                             ELÉRHETŐSÉG
                         </h2>

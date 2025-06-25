@@ -28,11 +28,11 @@ export default function Navbar() {
             </Link>
       
             <Link
-              to="/idopontfoglalas"
+              to="/galery"
               className="text-[#c2a470] uppercase font-semibold text-sm hover:text-[#fef8ee] transition-colors no-underline tracking-wide px-3 py-1"
               style={{ textDecoration: "none", paddingRight:"10px" }}
             >
-              IDŐPONTFOGLALÁS
+              GALÉRIA
             </Link>
             <Link
               to="/elerhetoseg"
