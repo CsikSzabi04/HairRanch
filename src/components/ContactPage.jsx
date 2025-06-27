@@ -51,7 +51,7 @@ export default function ContactPage() {
                                 <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">📞</span>
 
                                 <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="font-bold text-lg mb-1">Telefon:</span>
-                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-[#f5e8d3]">+36 70 242 1586</span>
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-[#f5e8d3]">+36 30 520 7871</span>
 
                             </div>
 
