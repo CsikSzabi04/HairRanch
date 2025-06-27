@@ -165,7 +165,7 @@ export default function Gallery() {
                 style={{ backgroundImage: `url(${backgroundImages[currentBg]})` }}
             >
                 <div className="w-[80%] flex justify-center mt-[4%]">
-                    <div className="bg-[#2a2118] border-4 border-[#c2a470] shadow-xl px-6 py-4 transform rotate-2 w-full sm:w-4/5 md:w-3/5 text-center" style={{ backgroundImage: 'url("/asd.jpg")', backgroundRepeat: "no-repeat", backgroundSize: "cover", marginTop: "2%", marginBottom: "2%" }} >
+                    <div className="bg-[#2a2118] border-4 border-[#c2a470] shadow-xl px-6 py-4 transform rotate-2 w-full sm:w-4/5 md:w-3/5 text-center" style={{ backgroundImage: 'url("/asd.jpg")', backgroundRepeat: "no-repeat", backgroundSize: "cover", marginTop: "5%", marginBottom: "2%" }} >
                         <h2 className="text-2xl sm:text-3xl md:text-5xl text-[#fef8ee] font-bold tracking-wider mb-2 font-serif">
                             Galéria
                         </h2>

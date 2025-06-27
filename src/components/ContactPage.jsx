@@ -22,7 +22,7 @@ export default function ContactPage() {
                 style={{ backgroundImage: `url(${backgroundImages[currentBg]})` }}
             >
                 {/* Header */}
-                <div className="w-[85%] max-w-4xl text-center mb-10" style={{ marginTop: "3%" }}>
+                <div className="w-[85%] max-w-4xl text-center mb-10" style={{ marginTop: "5%" }}>
                     <div style={{ backgroundImage: 'url("/asd.jpg")', backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className="bg-[#2a2118] border-4 border-[#c2a470] px-6 py-4 transform -rotate-1 shadow-xl">
                         <h2 className="text-3xl md:text-5xl font-serif text-[#fef8ee] font-bold tracking-wider">
                             ELÉRHETŐSÉG
@@ -50,8 +50,8 @@ export default function ContactPage() {
                             <div className="flex items-start gap-4 pt-4" style={{ fontSize: "14pt", marginBottom: "10px", marginLeft: "10px" }}>
                                 <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">📞</span>
 
-                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="font-bold text-lg mb-1">Telefon:</span>
-                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-[#f5e8d3]">+36 70 242 1586</span>
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="font-bold text-lg mb-1">Telefon:</span>
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-[#f5e8d3]">+36 70 242 1586</span>
 
                             </div>
 
@@ -59,15 +59,15 @@ export default function ContactPage() {
                             <div className="flex items-start gap-4 pt-4" style={{ fontSize: "14pt", marginBottom: "10px", marginLeft: "10px" }}>
                                 <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">✉️</span>
 
-                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="font-bold text-lg mb-1">Facebook | Messenger: </span>
-                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-[#f5e8d3]">
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="font-bold text-lg mb-1">Facebook | Messenger: </span>
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-[#f5e8d3]">
                                     HairRanch |{" "}
                                     <a
                                         href="https://www.facebook.com/bartalbertold"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="underline text-[#d6b981] hover:text-white transition"
-                                         style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }}
+                                        style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }}
                                     >
                                         Ide kattintva elérhető vagyok
                                     </a>
@@ -76,14 +76,14 @@ export default function ContactPage() {
                             </div>
 
                             {/* Hours */}
-                            <div className="flex items-start gap-4 pt-4"  style={{ fontSize: "14pt", marginBottom: "10px", marginLeft: "10px" }}>
+                            <div className="flex items-start gap-4 pt-4" style={{ fontSize: "14pt", marginBottom: "10px", marginLeft: "10px" }}>
                                 <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">⏰</span>
-
-                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="font-bold text-lg mb-1">Nyitvatartás:</span>
-                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }}>Hétfő – Péntek: 9:00 – 18:00</span>
-                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }}>Szombat: 9:00 – 14:00</span>
-                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }}>Vasárnap: Zárva</span>
-
+                                <div>
+                                     <div><span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="font-bold text-lg mb-1">Nyitvatartás:</span> </div>
+                                     <div><span style={{ fontSize: "14pt", marginBottom: "10px", marginLeft:"2%", display:"flex", flexWrap:"wrap", width:"300px" }}>Hétfő – Péntek: 9:00 – 18:00</span></div>
+                                     <div><span style={{ fontSize: "14pt", marginBottom: "10px", marginLeft:"2%" , display:"flex", flexWrap:"wrap", width:"300px" }}>Szombat: 8:00 – 12:00</span></div>
+                                    <div> <span style={{ fontSize: "14pt", marginBottom: "10px",  marginLeft:"2%", display:"flex", flexWrap:"wrap", width:"300px" }}>Vasárnap: Zárva</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>

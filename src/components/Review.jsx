@@ -72,7 +72,7 @@ export default function ReviewPage() {
                 style={{ backgroundImage: `url(${backgroundImages[currentBg]})` }}
             >
                 {/* Header */}
-                <div className="w-[85%] max-w-6xl text-center mb-8" style={{ marginTop: "2%", marginBottom: "2%" }} >
+                <div className="w-[85%] max-w-6xl text-center mb-8" style={{ marginTop: "6%", marginBottom: "2%" }} >
                     <div className="bg-[#2a2118] border-4 border-[#c2a470] px-6 py-4 transform -rotate-1 shadow-xl" style={{ backgroundImage: 'url("/asd.jpg")', backgroundRepeat: "no-repeat", backgroundSize: "cover" }} >
                         <h2 className="text-3xl md:text-5xl font-serif text-[#fef8ee] font-bold tracking-wider">
                             VÉLEMÉNYEK
