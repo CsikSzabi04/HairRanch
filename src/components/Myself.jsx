@@ -78,6 +78,28 @@ export default function ServicesPage() {
                             </div>
                         ))}
                     </div>
+
+                    <div className="flex items-center justify-center gap-4 flex-wrap mt-10" style={{marginTop:"2%"}}>
+                        <img
+                            src="berti5.png"
+                            className="w-[200px] h-[280px] object-cover rounded-md shadow-md"
+                            alt="Berti left"
+                        />
+                        <video
+                            src="video.mp4"
+                            controls
+                            className="rounded-lg shadow-lg max-w-full w-[10%] sm:w-[600px]"
+                        >
+                            Your browser does not support the video tag.
+                        </video>
+                        <img
+                            src="berti2.png"
+                            className="w-[200px] h-[280px] object-cover rounded-md shadow-md"
+                            alt="Berti right"
+                        />
+                    </div>
+
+
                 </div>
 
                 <div className="overflow-x-auto whitespace-nowrap scrollbar-hide w-[40%]" style={{ marginTop: "1%", marginBottom: "3%" }}>
