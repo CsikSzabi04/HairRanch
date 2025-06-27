@@ -56,8 +56,10 @@ export default function ServicesPage() {
                 </div>
 
                 {/* Services Carousel */}
-                <div className="overflow-x-auto whitespace-nowrap scrollbar-hide w-full" style={{ marginTop: "3%" }}>
-                    <div className="flex gap-6 justify-center w-max mx-auto px-2">
+                  {/* Services Carousel */}
+                <div className="w-full overflow-x-auto scrollbar-hide whitespace-nowrap" style={{ marginTop: "3%" }}>
+                    {/* Szolgáltatások - görgethető sor */}
+                    <div className="flex gap-6  justify-center w-max mx-auto px-2">
                         {services.map((service, index) => (
                             <div
                                 key={index}
@@ -69,7 +71,7 @@ export default function ServicesPage() {
                                     className="w-full h-52 object-cover"
                                 />
                                 <div className="p-4 text-center" style={{ width: "300px" }}>
-                                    <h3 className="text-lg md:text-xl text-[#d6b981] text-white font-serif mb-1 tracking-wide">
+                                    <h3 className="text-lg md:text-xl text-white font-serif mb-1 tracking-wide text-[#d6b981]">
                                         {service.name} <br />
                                         {service.namess}
                                     </h3>
@@ -79,30 +81,32 @@ export default function ServicesPage() {
                         ))}
                     </div>
 
-                    <div className="flex items-center justify-center gap-4 flex-wrap mt-10" style={{marginTop:"2%"}}>
-                        <img
-                            src="berti5.png"
-                            className="w-[200px] h-[280px] object-cover rounded-md shadow-md"
-                            alt="Berti left"
-                        />
-                        <video
-                            src="video.mp4"
-                            controls
-                            className="rounded-lg shadow-lg max-w-full w-[10%] sm:w-[600px]"
-                        >
-                            Your browser does not support the video tag.
-                        </video>
-                        <img
-                            src="berti2.png"
-                            className="w-[200px] h-[280px] object-cover rounded-md shadow-md"
-                            alt="Berti right"
-                        />
+                    {/* Videó és képek - görgethető sor */}
+                    <div className="overflow-x-auto whitespace-nowrap scrollbar-hide w-full mt-10" style={{ marginTop: "3%" }}>
+                        <div className="flex gap-4  justify-center w-max mx-auto px-2">
+                            <img
+                                src="berti5.png"
+                                className="w-[200px] h-[280px] object-cover rounded-md shadow-md"
+                                alt="Berti left"
+                            />
+                            <video
+                                src="video.mp4"
+                                controls
+                                className="rounded-lg shadow-lg max-w-full w-[22%] sm:w-[600px]"
+                            >
+                                Your browser does not support the video tag.
+                            </video>
+                            <img
+                                src="berti2.png"
+                                className="w-[200px] h-[280px] object-cover rounded-md shadow-md"
+                                alt="Berti right"
+                            />
+                        </div>
                     </div>
-
-
                 </div>
 
-                <div className="overflow-x-auto whitespace-nowrap scrollbar-hide w-[40%]" style={{ marginTop: "1%", marginBottom: "3%" }}>
+
+                <div className="overflow-x-auto whitespace-nowrap scrollbar-hide w-[55%]" style={{ marginTop: "1%", marginBottom: "3%" }}>
                     <div >
                         <div className="flex gap-6 justify-center w-max mx-auto px-2  ">
                             {backgroundImages3.map((img, index) => (
