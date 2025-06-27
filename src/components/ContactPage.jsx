@@ -23,7 +23,7 @@ export default function ContactPage() {
             >
                 {/* Header */}
                 <div className="w-[85%] max-w-4xl text-center mb-10" style={{ marginTop: "3%" }}>
-                    <div  style={{ backgroundImage: 'url("/asd.jpg")',  backgroundRepeat:"no-repeat", backgroundSize:"cover" }}  className="bg-[#2a2118] border-4 border-[#c2a470] px-6 py-4 transform -rotate-1 shadow-xl">
+                    <div style={{ backgroundImage: 'url("/asd.jpg")', backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className="bg-[#2a2118] border-4 border-[#c2a470] px-6 py-4 transform -rotate-1 shadow-xl">
                         <h2 className="text-3xl md:text-5xl font-serif text-[#fef8ee] font-bold tracking-wider">
                             ELÉRHETŐSÉG
                         </h2>
@@ -31,7 +31,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Content Section */}
-                <div className="grid md:grid-cols-2  gap-8 w-[85%] max-w-6xl px-4" style={{ marginTop: "3%", marginLeft:"0%" }}>
+                <div className="grid md:grid-cols-2  gap-8 w-[85%] max-w-6xl px-4" style={{ marginTop: "3%", marginLeft: "0%" }}>
                     {/* Contact Info */}
                     <div className="bg-[#1f1a17]/90 border-2 border-[#c2a470] rounded-2xl p-8 md:p-10 shadow-2xl text-[#fef8ee] space-y-8">
                         <h3 className="text-3xl md:text-4xl font-serif font-bold text-center border-b border-[#c2a470]/50 pb-4">
@@ -40,51 +40,50 @@ export default function ContactPage() {
 
                         <div className="space-y-6 divide-y divide-[#c2a470]/30">
                             {/* Address */}
-                            <div className="flex items-start gap-4 pt-2">
-                                <div className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">📍</div>
-                                <div>
-                                    <h4 className="font-bold text-lg mb-1">Cím</h4>
-                                    <p className="text-[#f5e8d3]">Március 15. utca 11, HairRanch, Kecskemét, Hungary</p>
-                                </div>
+                            <div className=" flex items-end gap-4 pt-2" style={{ fontSize: "14pt", marginBottom: "10px", marginLeft: "10px" }}>
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">📍</span>
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="font-bold text-lg">Cím:</span>
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-[#f5e8d3]">Március 15. utca 11, HairRanch, Kecskemét, Hungary</span>
                             </div>
 
                             {/* Phone */}
-                            <div className="flex items-start gap-4 pt-4">
-                                <div className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">📞</div>
-                                <div>
-                                    <h4 className="font-bold text-lg mb-1">Telefon</h4>
-                                    <p className="text-[#f5e8d3]">+36 70 242 1586</p>
-                                </div>
+                            <div className="flex items-start gap-4 pt-4" style={{ fontSize: "14pt", marginBottom: "10px", marginLeft: "10px" }}>
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">📞</span>
+
+                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="font-bold text-lg mb-1">Telefon:</span>
+                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-[#f5e8d3]">+36 70 242 1586</span>
+
                             </div>
 
                             {/* Facebook */}
-                            <div className="flex items-start gap-4 pt-4">
-                                <div className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">✉️</div>
-                                <div>
-                                    <h4 className="font-bold text-lg mb-1">Facebook | Messenger</h4>
-                                    <p className="text-[#f5e8d3]">
-                                        HairRanch |{" "}
-                                        <a
-                                            href="https://www.facebook.com/bartalbertold"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="underline text-[#d6b981] hover:text-white transition"
-                                        >
-                                            Ide kattintva elérhető vagyok
-                                        </a>
-                                    </p>
-                                </div>
+                            <div className="flex items-start gap-4 pt-4" style={{ fontSize: "14pt", marginBottom: "10px", marginLeft: "10px" }}>
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">✉️</span>
+
+                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="font-bold text-lg mb-1">Facebook | Messenger: </span>
+                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-[#f5e8d3]">
+                                    HairRanch |{" "}
+                                    <a
+                                        href="https://www.facebook.com/bartalbertold"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="underline text-[#d6b981] hover:text-white transition"
+                                         style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }}
+                                    >
+                                        Ide kattintva elérhető vagyok
+                                    </a>
+                                </span>
+
                             </div>
 
                             {/* Hours */}
-                            <div className="flex items-start gap-4 pt-4">
-                                <div className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">⏰</div>
-                                <div>
-                                    <h4 className="font-bold text-lg mb-1">Nyitvatartás</h4>
-                                    <p>Hétfő – Péntek: 9:00 – 18:00</p>
-                                    <p>Szombat: 9:00 – 14:00</p>
-                                    <p>Vasárnap: Zárva</p>
-                                </div>
+                            <div className="flex items-start gap-4 pt-4"  style={{ fontSize: "14pt", marginBottom: "10px", marginLeft: "10px" }}>
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="text-2xl bg-[#c2a470]/20 text-[#d6b981] p-2 rounded-full">⏰</span>
+
+                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }} className="font-bold text-lg mb-1">Nyitvatartás:</span>
+                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }}>Hétfő – Péntek: 9:00 – 18:00</span>
+                                <span  style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }}>Szombat: 9:00 – 14:00</span>
+                                <span style={{ fontSize: "14pt", marginRight: "10px", marginBottom: "10px" }}>Vasárnap: Zárva</span>
+
                             </div>
                         </div>
                     </div>

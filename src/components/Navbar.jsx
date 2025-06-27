@@ -26,7 +26,14 @@ export default function Navbar() {
             >
               FŐOLDAL
             </Link>
-
+            <Link
+              to="/szolgaltatasok"
+              className="px-6 py-3 text-[#c2a470] hover:text-[#fef8ee] transition-colors uppercase tracking-wide font-semibold"
+              onClick={() => setMobileMenuOpen(false)}
+               style={{ textDecoration: "none", paddingRight: "10px" }}
+            >
+              SZOLGÁLTATÁSOK
+            </Link>
             <Link
               to="/galery"
               className="text-[#c2a470] uppercase font-semibold text-sm hover:text-[#fef8ee] transition-colors no-underline tracking-wide px-3 py-1"
@@ -34,14 +41,7 @@ export default function Navbar() {
             >
               GALÉRIA
             </Link>
-            <Link
-              to="/review"
-              className="text-[#c2a470] uppercase font-semibold text-sm hover:text-[#fef8ee] transition-colors no-underline tracking-wide px-3 py-1"
-              style={{ textDecoration: "none", paddingRight: "10px" }}
 
-            >
-              VÉLEMÉNYEK
-            </Link>
             <Link
               to="/elerhetoseg"
               className="text-[#c2a470] uppercase font-semibold text-sm hover:text-[#fef8ee] transition-colors no-underline tracking-wide px-3 py-1"
