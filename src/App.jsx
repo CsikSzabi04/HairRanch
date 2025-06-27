@@ -9,6 +9,7 @@ import BookingPage from "./components/BookingPage";
 import ContactPage from "./components/ContactPage";
 import Galery from "./components/Galery";
 import Review from "./components/Review";
+import Myself from "./components/Myself";
 import "./App.css";
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/idopontfoglalas" element={<BookingPage />} />
             <Route path="/elerhetoseg" element={<ContactPage />} />
             <Route path="/galery" element={<Galery />} />
+            <Route path="/myself" element={<Myself />} />
             <Route path="/review" element={<Review />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

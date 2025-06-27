@@ -34,11 +34,11 @@ export default function Home() {
                            <strong>"Ahol minden férfi és nő, legjobb stílusban távozik"</strong> 
                         </h2>
                         <Link
-                            to="/szolgaltatasok"
+                            to="/myself"
                             className="text-[#c2a470] uppercase font-semibold text-sm hover:text-[#fef8ee] transition-colors no-underline tracking-wide px-3 py-1"
                             style={{ textDecoration: "none", paddingRight: "10px" }}
                         >
-                            SZOLGÁLTATÁSOK  ⬅ Katt
+                            Rólam  ⬅ Katt
                         </Link>
                     </div>
                 </div>
